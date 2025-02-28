@@ -1,0 +1,18 @@
+go version
+go1.22.2
+
+api/: Entry point for the application.
+internal/: Contains the core business logic and implementation.
+
+api/: Handles HTTP requests and routes.
+routes.go: Defines route groups and applies middleware.
+handlers/: Contains request handlers for open and protected routes.
+application/: Service layer to manage business use-cases.
+product_service.go: Business logic for managing products.
+domain/: Core business objects (entities) and contracts (interfaces).
+entities/: Defines domain models (e.g., product.go).
+repositories/: Abstracts data access using interfaces.
+infrastructure/: External systems (e.g., database, repositories).
+db/: MongoDB connection setup.
+repo/: Concrete implementation of repositories.
+config/: Configuration-related logic.
